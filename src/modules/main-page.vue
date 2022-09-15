@@ -171,7 +171,33 @@
                 <div class="review-inner__header">
                     <h1>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h1>
                 </div>
-
+                <div class="review-inner__row">
+                    <div class="review-inner__row_card">
+                        <div class="review-content">
+                            <p>Хороший отзыв</p>
+                            <img src="../assets/images/ditto.png" alt="">
+                        </div>
+                        <img src="../assets/images/avatar.png" alt=""><h3></h3>
+                    </div>
+                    <div class="review-inner__row_card">
+                        <div class="review-content">
+                            <img src="" alt="">
+                        </div>
+                        <img src="" alt=""><h3></h3>
+                    </div>
+                    <div class="review-inner__row_card">
+                        <div class="review-content">
+                            <img src="" alt="">
+                        </div>
+                        <img src="" alt=""><h3></h3>
+                    </div>
+                    <div class="review-inner__row_card">
+                        <div class="review-content">
+                            <img src="" alt="">
+                        </div>
+                        <img src="" alt=""><h3></h3>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -726,6 +752,17 @@ export default {
                         padding-right: 40px;
                     }
                 }
+            }
+        }
+    }
+    .review {
+        .review-inner {
+            .review-inner__header {
+                font-family: 'Roboto';
+                font-weight: 800;
+                color: #082567;
+                font-size: 75px;
+                text-align: center;
             }
         }
     }
