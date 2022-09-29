@@ -168,49 +168,59 @@
         </section>
         <section class="review">
             <div class="review-inner">
-                <div class="review-inner__header">
-                    <h1>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h1>
+                <h1 class="review-inner__header">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h1>
+                <slide-review></slide-review>
+            </div>
+        </section>
+        <section class="connect">
+            <div class="connect-inner">
+                <div class="connect-inner__header">
+                    <h1>
+                        Оставьте заявку и получите <br> консультацию от специалиста
+                    </h1>
                 </div>
-                <div class="review-inner__row">
-                    <div class="review-inner__row_card">
-                        <div class="review-content">
-                            <p>Хороший отзыв</p>
-                            <img src="../assets/images/ditto.png" alt="">
-                        </div>
-                        <img src="../assets/images/avatar.png" alt=""><h3></h3>
-                    </div>
-                    <div class="review-inner__row_card">
-                        <div class="review-content">
-                            <img src="" alt="">
-                        </div>
-                        <img src="" alt=""><h3></h3>
-                    </div>
-                    <div class="review-inner__row_card">
-                        <div class="review-content">
-                            <img src="" alt="">
-                        </div>
-                        <img src="" alt=""><h3></h3>
-                    </div>
-                    <div class="review-inner__row_card">
-                        <div class="review-content">
-                            <img src="" alt="">
-                        </div>
-                        <img src="" alt=""><h3></h3>
-                    </div>
+                <div class="connect-inner__call">
+                    <input type="text" name="name" placeholder="Имя">
+                        <span class="connect-inner__call_border"></span>
+                    <input type="tel" name="tel" placeholder="Контакты">
+                    <input type="text" name="question" placeholder="Ваш вопрос">
+                    <button>
+                        Позвоните мне!
+                    </button>
                 </div>
             </div>
         </section>
-
+        <section class="contacts">
+            <div class="contacts-inner">
+                <div class="contacts-inner__header">
+                    <h1>Наши контакты</h1>
+                </div>
+                <div class="contacts-inner__left">
+                    <h2>Контакты</h2>
+                    <h2>Почта</h2>
+                    <h2>График работы</h2>
+                </div>
+                <div class="contacts-inner__right">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </section>
     </div>
 </template> 
 
 <script>
+import SlideReview from './components/slide-review.vue'
+
 export default {
-    
+    name: 'App',
+    components: {
+        SlideReview
+    }
 }
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/style.scss";
     .main {
         .about {
             margin: 0;
@@ -756,15 +766,108 @@ export default {
         }
     }
     .review {
-        .review-inner {
-            .review-inner__header {
+        &-inner {
+        @extend %container;
+            &__header {
                 font-family: 'Roboto';
                 font-weight: 800;
                 color: #082567;
                 font-size: 75px;
                 text-align: center;
+                padding-top: 100px;
+            }
+            &__row {
+                display: flex;
+                justify-content: space-around;
+            }
+
+        }
+    }
+    .connect {
+        &-inner {
+            @extend %container;
+            &__header {
+                font-family: 'Roboto';
+                font-weight: 800;
+                color: #082567;
+                font-size: 40px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            &__call {
+                padding-left: 40px;
+                display: flex;
+                justify-content: space-between;
+                input[name=name],[name=tel] {
+                    width: 250px;
+                    height: 50px;
+                    padding-left: 20px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-size: 18px;
+                    color: #082567;
+                    &::placeholder {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-size: 18px;
+                        color: #082567;
+                        line-height: 30px;
+                        text-align: left;
+                        
+                    }
+                }
+                input[name=question] {
+                    width: 450px;
+                    height: 50px;
+                    padding-left: 20px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-size: 18px;
+                    color: #082567;
+                    &::placeholder {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-size: 18px;
+                        color: #082567;
+                        line-height: 30px;
+                        text-align: left;
+                    }
+                }
+                &_border::before {
+
+                }
+                button {
+                    width: 200px;
+                    height: 50px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-size: 18px;
+                    color: #082567;
+                    background-color: white;
+                    border: 1px solid;
+                    
+                }
+                button:hover {
+                    background-color: #082567;
+                    color: white;
+                    
+                }
             }
         }
     }
+    .contacts {
+        &-inner {
+            @extend %container;
+            &__header {
+                font-family: 'Roboto';
+                font-weight: 800;
+                color: #082567;
+                font-size: 40px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+    
 </style>
 

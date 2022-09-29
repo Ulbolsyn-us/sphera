@@ -1,0 +1,43 @@
+{
+    "slides": [
+        {
+            "id": 1,
+            "review": "post post post post post",
+            "contacts": "Глав бух",
+            "avatar": "http://localhost:3000/assets/images/avatar.png"
+        },
+        {
+            "id": 2,
+            "review": "post post post post post",
+            "contacts": "Глав бух2",
+            "avatar": "http://localhost:3000/assets/images/avatar.png"
+        },
+        {
+            "id": 3,
+            "review": "post post post post post",
+            "contacts": "Глав бух3",
+            "avatar": "http://localhost:3000/assets/images/avatar.png"
+        },
+        {
+            "id": 4,
+            "review": "post post post post post",
+            "contacts": "Глав бух4",
+            "avatar": "http://localhost:3000/assets/images/avatar.png"
+        },
+        {
+            "id": 5,
+            "review": "post post post post post",
+            "contacts": "Глав бух5",
+            "avatar": "http://localhost:3000/assets/images/avatar.png"
+        },
+        {
+            "id": 6,
+            "review": "post post post post post",
+            "contacts": "Глав бух6",
+            "avatar": "http://localhost:3000/assets/images/avatar.png"
+        }
+    ],
+    "post": [
+       
+    ]
+}
