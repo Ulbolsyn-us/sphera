@@ -1,43 +1,63 @@
 {
-    "slides": [
-        {
-            "id": 1,
-            "review": "post post post post post",
-            "contacts": "Глав бух",
-            "avatar": "http://localhost:3000/assets/images/avatar.png"
-        },
-        {
-            "id": 2,
-            "review": "post post post post post",
-            "contacts": "Глав бух2",
-            "avatar": "http://localhost:3000/assets/images/avatar.png"
-        },
-        {
-            "id": 3,
-            "review": "post post post post post",
-            "contacts": "Глав бух3",
-            "avatar": "http://localhost:3000/assets/images/avatar.png"
-        },
-        {
-            "id": 4,
-            "review": "post post post post post",
-            "contacts": "Глав бух4",
-            "avatar": "http://localhost:3000/assets/images/avatar.png"
-        },
-        {
-            "id": 5,
-            "review": "post post post post post",
-            "contacts": "Глав бух5",
-            "avatar": "http://localhost:3000/assets/images/avatar.png"
-        },
-        {
-            "id": 6,
-            "review": "post post post post post",
-            "contacts": "Глав бух6",
-            "avatar": "http://localhost:3000/assets/images/avatar.png"
-        }
-    ],
-    "post": [
-       
-    ]
+  "slides": [
+    {
+      "id": 1,
+      "review": "post post post post post",
+      "contacts": "Глав бух",
+      "avatar": "http://localhost:3000/assets/images/avatar.png"
+    },
+    {
+      "id": 2,
+      "review": "post post post post post",
+      "contacts": "Глав бух2",
+      "avatar": "http://localhost:3000/assets/images/avatar.png"
+    },
+    {
+      "id": 3,
+      "review": "post post post post post",
+      "contacts": "Глав бух3",
+      "avatar": "http://localhost:3000/assets/images/avatar.png"
+    },
+    {
+      "id": 4,
+      "review": "post post post post post",
+      "contacts": "Глав бух4",
+      "avatar": "http://localhost:3000/assets/images/avatar.png"
+    },
+    {
+      "id": 5,
+      "review": "post post post post post",
+      "contacts": "Глав бух5",
+      "avatar": "http://localhost:3000/assets/images/avatar.png"
+    },
+    {
+      "id": 6,
+      "review": "post post post post post",
+      "contacts": "Глав бух6",
+      "avatar": "http://localhost:3000/assets/images/avatar.png"
+    }
+  ],
+  "1c": [
+    {
+      "id": 1,
+      "images": "http://localhost:3000/assets/images/book.png",
+      "title": "Информационная система 1С:ИТС",
+      "info": "Вы сможете быстро научиться работе в программе «1С» благодаря пошаговым инструкциям, научитесь отправлять электронную отчётность прямо из своей программы и запросто рассчитаете налоги по хозяйственным операциям, верно отразите их в учёте. Будете в курсе последних новостей по темам бухгалтерского, налогового и кадрового учета, сможете получить по ним консультации. С лёгкостью составите бухгалтерскую, налоговую отчётность и отчётность по страховым взносам.Информационная система 1С: ИТС полезна руководителям, кадровикам, экономистам, бухгалтерам, IT-специалистам коммерческих организаций."
+    },
+    {
+      "id": 2,
+      "images": "http://localhost:3000/assets/images/internet.png",
+      "title": "1С: Предприятие 8 через Интернет",
+      "info": "Облачный сервис, который позволяет работать с привычными программами 1С через интернет с любого устройства. Ведите бухгалтерский, налоговый, управленческий учет, сдавайте отчетность. Сервис подходит для любого вида бизнеса. Он особенно удобен, если бухучет ведется на аутсорсинге, частo приходится работать удаленно из дома, нужно быстро автоматизировать работу или объединить несколько филиалов."
+    },
+    {
+      "id": 3,
+      "images": "http://localhost:3000/assets/images/cloud.png",
+      "title": "1С: Обновление программ",
+      "info": "Позволяет:"
+    }
+  ],
+  "post": [
+    
+  ]
 }

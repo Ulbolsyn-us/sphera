@@ -1,16 +1,16 @@
 <template>
-    <section class="footer">
-            <div class="footer-inner">
-                <div class="footer-inner__info">
+    <div class="contacts">
+            <div class="contacts-inner">
+                <div class="contacts-inner__info">
                     <h1>Наши контакты</h1>
-                    <div class="footer-inner__info_cnt">
-                        <div class="footer-inner__info_cnt_titl">
+                    <div class="contacts-inner__info_cnt">
+                        <div class="contacts-inner__info_cnt_titl">
                             <h2>Контакты:</h2>
                             <h2>Почта:</h2>
                             <h2>График работы:</h2>
                             <h2>Адрес:</h2>
                         </div>
-                        <div class="footer-inner__info_cnt_sub">
+                        <div class="contacts-inner__info_cnt_sub">
                             <h2>+7 778 870 10 42</h2>
                             <h2>office@spheregroup.kz</h2>
                             <h2>Пн-Пт: 09:00 - 18:00</h2>
@@ -18,11 +18,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-inner__map">
+                <div class="contacts-inner__map">
                     <div ref="cap" class="2GisMap" style="width:100%; height:100%"></div>
                 </div>
             </div>
-        </section>
+    </div>
 </template>
 
 <script>
@@ -52,9 +52,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/style.scss";
-.footer {
-    background-color: #64BEC8;
+@import "../../assets/style.scss";
+.contacts {
         &-inner {
             @extend %container;
             display: flex;
@@ -85,26 +84,12 @@ export default {
                             font-weight: 800;
                             font-size: 22px;
                         }
-                        @media (max-width: 1024px) {
-                            padding-left: 80px;
-                            padding-right: 20px;
-                        }
                     }
                 }
             }
             &__map {
                 width: 600px;
                 height: 400px;
-            }
-            @media (max-width: 768px) {
-                flex-wrap: wrap; 
-                padding-left: 80px; 
-                &__info_sub {
-                    padding-left: 80px;
-                }         
-            }
-            @media (max-width: 475px) {
-                padding-left: 20px;         
             }
         }
     }

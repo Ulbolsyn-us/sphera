@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 body {
     margin: 0;
@@ -9,16 +10,81 @@ body {
 
 a {
     text-decoration: none;
+    transition: 0.5s;
 }
 
-@mixin header {
+* {
+    scroll-behavior: smooth;
+}
+
+%header {
     font-family: 'Roboto';
     font-weight: 800;
-    color: #082567;
+    color: #025962;
     font-size: 75px;
     text-align: center;
+    margin-top: 0;
+}
+%circle_num {
+    font-family: 'Roboto';
+    font-weight: 800;
+    color: #E15517;
+    font-size: 64px;
+    text-align: center;
+    text-shadow: #E1B57C 0.1em 0.1em 0.2em;
+}
+%circle_info {
+    width: 300px;
+    height: 60px;
+    background-color: #008B95;
+    margin-left: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    line-height: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+%container {
+    padding: 50px 120px;
 }
 
-%container {
-    padding: 50px 200px;
+%button {
+    width: 250px;
+    height: 60px;
+    font-size: 22px;
+    padding-left: 20px; 
+    font-family: 'Roboto Slab', serif;
+    background-color: white;
+    transition: 0.5s;
+    border: 3px solid #082567;
+    cursor: pointer;
+    display: block;
+    
 }
+
+@media (max-width: 1024px) {
+    %container {
+        padding: 50px 80px;
+    }
+}
+@media (max-width: 768px) {
+    %header {
+        font-size: 52px;
+    }
+}
+@media (max-width: 475px) {
+    %header {
+        font-size: 42px;
+    }
+    %container {
+        padding: 40px 20px;
+    }
+}
+
+
